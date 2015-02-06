@@ -1,0 +1,1 @@
+$(document).ready(function(){function o(){var o=$(".about-title"),n=$(".about-content");console.log("Title: "+o+" Conent: "+n)}console.log("ready"),o()});

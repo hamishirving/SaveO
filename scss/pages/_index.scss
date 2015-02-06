@@ -1,0 +1,161 @@
+// Header section
+
+.header {
+	color: $white;
+	background-color: $secondary-color;
+	background: linear-gradient(to top, rgba(18,106,217,1.0), rgba(18,106,217,0.0)), url('../img/svg/icon_header_pattern.svg') repeat center;
+	background-color: $secondary-color;
+	width: 100%;
+
+	.header-container {
+		@include outer-container;
+		padding: 30px 10px;
+
+		.headline {
+			font-size: 1.875em;
+			font-weight: 300;
+		}
+
+		.search-form {
+			@include row;
+			width: 100%;
+			height: 45px;
+			display: inline;
+
+			input {
+				@include span-columns(10);
+				border: none;
+			}
+
+			.btn-search {
+				@include span-columns(2);
+
+				img {
+					height: 25px;
+					width: 25px;
+				}
+			}
+		}
+
+		.current-location {
+			text-align: center;
+
+			.horizontal-rule {
+				display: inline-block;
+				height: 12px;
+				width: 100%;
+				border-bottom: 1px solid rgba(255,255,255,0.4);
+				padding: 27px 0;
+				margin-top: -25px;
+			}
+
+			.current-location-divider {
+				height: 25px;
+				padding: 0 7px;
+				margin: 15px auto;
+				background-color: $secondary-color;
+			}
+		}
+	}
+}
+
+// How it Works section
+
+.how-it-works {
+	padding: 40px 10px;
+	text-align: center;
+
+	.how-it-works-container {
+		@include outer-container;
+	}
+
+	h2 {
+		font-family: $font-family--secondary;
+		font-size: em(21px);
+		margin: 0;
+	}
+
+	img {
+		height: 120px;
+		width: 120px;
+		margin-top: 36px;
+		margin-bottom: 10px;
+	}
+
+	.how-it-works-description {
+		font-family: $font-family--primary;
+		margin: 0;
+		font-size: 1em;
+		line-height: 1.5em;
+	}
+}
+
+// About The Service section
+
+.about {
+	padding: 40px 10px;
+	background-color: $light-grey;
+
+	.about-container {
+		@include outer-container;
+	}
+
+	h2 {
+		font-family: $font-family--secondary;
+		font-size: em(21px);
+		margin-top: 0;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+
+	.about-title {
+		margin-top: 15px;
+		margin-bottom: 0;
+	}
+
+	.about-content {
+		font-family: $font-family--secondary;
+		line-height: 1.25em;
+		margin-top: 10px;
+	}
+}
+
+// Back To Top section
+
+.back-to-top {
+	@include row;
+	padding: 10px 10px;
+	border-top: 1px solid $primary-color;
+	
+	.btn-signup-btm {
+		@include btn;
+		@include span-columns(8);
+		height: 40px;
+		background-color: $primary-color;
+		color: $white;
+
+		&:hover {
+			background-color: $primary-hover;
+		}
+	}
+
+	.btn-to-top {
+		@include btn;
+		@include span-columns(4);
+		height: 40px;
+		color: $primary-color;
+		background-color: transparent;
+		border: 1px solid $primary-color;
+
+		&:hover {
+			background-color: $primary-outline-hover;
+		}
+
+		.to-top {
+			background: url('../img/svg/icon_to_top.svg') no-repeat;
+			height: 16px;
+			margin-left: 5px;
+			margin-bottom: -3px;
+		}
+	}
+}
